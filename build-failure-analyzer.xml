@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.sonyericsson.jenkins.plugins.bfa.PluginImpl plugin="build-failure-analyzer@1.15.0">
+  <noCausesMessage>No problems were identified. If you know why this problem occurred, please add a suitable Cause for it.</noCausesMessage>
+  <globalEnabled>true</globalEnabled>
+  <doNotAnalyzeAbortedJob>false</doNotAnalyzeAbortedJob>
+  <gerritTriggerEnabled>true</gerritTriggerEnabled>
+  <knowledgeBase class="com.sonyericsson.jenkins.plugins.bfa.db.LocalFileKnowledgeBase">
+    <causes>
+      <entry>
+        <string>37f4e404-1705-4675-983b-77a3befa9c25</string>
+        <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+          <id>37f4e404-1705-4675-983b-77a3befa9c25</id>
+          <name>Squish Test Error</name>
+          <description>The build failed because of one or more errors in a Squish Test.</description>
+          <comment></comment>
+          <indications>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+              <pattern>.*errors: [1-9]*</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+              <pattern>.*fatals: [1-9]*</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+          </indications>
+          <modifications class="linked-list">
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-12 20:48:07.360 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-10 09:47:19.690 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-06 09:04:38.234 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+          </modifications>
+        </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+      </entry>
+      <entry>
+        <string>bd5d5c2f-50fb-49bc-9c53-b369dd01d939</string>
+        <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+          <id>bd5d5c2f-50fb-49bc-9c53-b369dd01d939</id>
+          <name>MSBuild error</name>
+          <description>The build failed because there was an error: ${1,2}</description>
+          <comment></comment>
+          <categories class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>Build</string>
+            </a>
+          </categories>
+          <indications>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+              <pattern>.*error ([A-Z]+[0-9]+):\s*(.*)$</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+              <pattern>.*error :(\s*)(.*)$</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+          </indications>
+          <modifications class="linked-list">
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-12 20:54:51.915 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-12 20:54:04.469 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-11 14:52:43.490 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-11 14:51:30.688 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-11 14:50:36.835 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-09 19:37:37.253 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-09 12:13:23.629 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-08 23:30:00.48 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-08 23:15:19.256 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+          </modifications>
+        </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+      </entry>
+      <entry>
+        <string>ac9b1ac0-f0bd-4ea1-a843-9e74a82bb782</string>
+        <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+          <id>ac9b1ac0-f0bd-4ea1-a843-9e74a82bb782</id>
+          <name>BEATnic test(s) failed</name>
+          <description>The build failed because a BEATnic test failed: ${1,6}</description>
+          <comment></comment>
+          <categories class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>Tests</string>
+            </a>
+          </categories>
+          <indications>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.MultilineBuildLogIndication>
+              <pattern>(\[[0-9/: ]+\] +)(Test Run Status: Failed\s+)(\[[0-9/: ]+\] +[\-]+\s+)+(\[[0-9/: ]+\] +)(Test File Name: )([\w\d.]+)</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.MultilineBuildLogIndication>
+          </indications>
+          <modifications class="linked-list">
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-11 14:48:10.261 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-10 15:47:02.552 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-10 14:30:05.243 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-10 14:26:18.987 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-09 21:32:52.370 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-09 21:19:50.995 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-08 21:55:36.267 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+          </modifications>
+        </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+      </entry>
+      <entry>
+        <string>24ff2195-7777-4285-a8be-06933ce8ddf8</string>
+        <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+          <id>24ff2195-7777-4285-a8be-06933ce8ddf8</id>
+          <name>Build Error</name>
+          <description>The build failed due to an error: ${1,1}</description>
+          <comment></comment>
+          <categories class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>Build</string>
+            </a>
+          </categories>
+          <indications>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+              <pattern>.*[eE][rR][rR][oO][rR]:\s+(.*)$</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+              <pattern>.*FATAL:\s+(.*)$</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+              <pattern>.*Error Message:\s+(.*)$</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+          </indications>
+          <modifications class="linked-list">
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-18 18:20:02.869 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-18 18:16:24.50 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-12 21:11:12.359 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-12 20:54:23.295 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-05 13:41:06.658 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-03 14:53:03.715 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-03 14:49:04.998 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-09 22:19:02.120 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-09 19:01:44.96 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+          </modifications>
+        </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+      </entry>
+      <entry>
+        <string>08c97d89-7ae5-4c33-be7e-8cdf7795b6c2</string>
+        <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+          <id>08c97d89-7ae5-4c33-be7e-8cdf7795b6c2</id>
+          <name>Jenkins error</name>
+          <description>Jenkins failed due to an error: ${1,1}</description>
+          <comment></comment>
+          <categories class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>Jenkins</string>
+            </a>
+          </categories>
+          <indications>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+              <pattern>.*(java.*Exception: .*)$</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+          </indications>
+          <modifications class="linked-list">
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-19 15:30:50.242 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+          </modifications>
+        </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+      </entry>
+      <entry>
+        <string>a73a648d-5ca0-479b-887e-da1382b3ebcd</string>
+        <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+          <id>a73a648d-5ca0-479b-887e-da1382b3ebcd</id>
+          <name>PowerShell error</name>
+          <description>The build failed due to a PowerShell error: ${1,1}</description>
+          <comment></comment>
+          <categories class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>Build</string>
+              <string>Errors</string>
+            </a>
+          </categories>
+          <indications>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+              <pattern>.*CategoryInfo *: *(.*)$.*</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.BuildLogIndication>
+          </indications>
+          <modifications class="linked-list">
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-23 16:15:31.826 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-23 13:49:45.670 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-09 12:13:33.238 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-08 22:30:48.97 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-03-08 22:09:24.575 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-02-02 13:18:40.798 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2015-12-02 19:16:09.279 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2015-12-02 19:14:03.4 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2015-12-02 19:11:37.93 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+          </modifications>
+        </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+      </entry>
+      <entry>
+        <string>d1cc3bf8-04df-4d96-9c37-0e638ef2b273</string>
+        <com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+          <id>d1cc3bf8-04df-4d96-9c37-0e638ef2b273</id>
+          <name>ReSharper Exception</name>
+          <description>ReSharper inspection caught an exception: ${1,1}</description>
+          <comment></comment>
+          <categories class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>ReSharper</string>
+            </a>
+          </categories>
+          <indications>
+            <com.sonyericsson.jenkins.plugins.bfa.model.indication.MultilineBuildLogIndication>
+              <pattern>--- EXCEPTION [^\r]*\s*Message = ([^\r]*)</pattern>
+            </com.sonyericsson.jenkins.plugins.bfa.model.indication.MultilineBuildLogIndication>
+          </indications>
+          <modifications class="linked-list">
+            <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+              <time>2016-05-18 15:53:29.214 UTC</time>
+            </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseModification>
+          </modifications>
+        </com.sonyericsson.jenkins.plugins.bfa.model.FailureCause>
+      </entry>
+    </causes>
+  </knowledgeBase>
+  <nrOfScanThreads>3</nrOfScanThreads>
+  <graphsEnabled>false</graphsEnabled>
+  <testResultParsingEnabled>false</testResultParsingEnabled>
+  <testResultCategories></testResultCategories>
+  <sodVariables>
+    <minimumSodWorkerThreads>1</minimumSodWorkerThreads>
+    <maximumSodWorkerThreads>1</maximumSodWorkerThreads>
+    <sodThreadKeepAliveTime>15</sodThreadKeepAliveTime>
+    <sodWaitForJobShutdownTimeout>30</sodWaitForJobShutdownTimeout>
+    <sodCorePoolNumberOfThreads>5</sodCorePoolNumberOfThreads>
+  </sodVariables>
+</com.sonyericsson.jenkins.plugins.bfa.PluginImpl>

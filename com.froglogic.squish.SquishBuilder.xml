@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.froglogic.squish.SquishBuilder_-DescriptorImpl plugin="SquishPlugin@6.4">
+  <buildResultType>UNSTABLE_ON_FAILED_VPS</buildResultType>
+  <globalSquishPath>D:\SquishInstall\squish-6.0.2-web-windows</globalSquishPath>
+  <globalSquishPathConfigurationFile></globalSquishPathConfigurationFile>
+  <globalPreserveMessageFormatting>false</globalPreserveMessageFormatting>
+  <globalRemoveFailedImages>false</globalRemoveFailedImages>
+  <globalLogScriptMessages>false</globalLogScriptMessages>
+  <buildFailureOnFailedVerifications>false</buildFailureOnFailedVerifications>
+</com.froglogic.squish.SquishBuilder_-DescriptorImpl>
